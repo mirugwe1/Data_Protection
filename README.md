@@ -1,12 +1,13 @@
 # AES AND RSA DATA ENCRYPTION ALGORITHM
 
- ##Contents
+ ## Contents
 
-Introduction\
-AES Algorithm\
-RSA Algorithm\
-Hybrid Encryption\
-Steps Involved
+[Introduction](https://github.com/mirugwe1/Data_Protection#introduction)\
+[AES Algorithm](https://github.com/mirugwe1/Data_Protection#aes-algorithm)\
+[RSA Algorithm](https://github.com/mirugwe1/Data_Protection#rsa-algorithm)\
+[Hybrid Encryption](https://github.com/mirugwe1/Data_Protection#hybrid-encryption)\
+[Steps Involved](https://github.com/mirugwe1/Data_Protection#steps-involved)\
+[Flow Diagram](https://github.com/mirugwe1/Data_Protection#flow-diagram)
 
 ## Introduction
 
@@ -24,7 +25,7 @@ RSA (Rivest–Shamir–Adleman) is an asymmetric encryption algorithm that uses 
 
 In this project, we employ a hybrid encryption scheme that combines the advantages of both AES and RSA algorithms. We use symmetric encryption (AES) to encrypt and decrypt the data and then employ RSA encryption to encrypt and decrypt the symmetric encryption key. This ensures secure distribution of the AES key and offers the benefits of fast encryption speed (AES) and easy management of RSA keys.
 
-### Steps Involved
+## Steps Involved
 
 Sender:
 
@@ -43,3 +44,7 @@ Recipient:
 * Decrypt the AES key with the recipient's private RSA key.
 * Use the decrypted AES key and IV to decrypt the rest of the bundled file.
 * Open the decrypted file.
+
+## Flow Diagram
+
+![](https://github.com/mirugwe1/Data_Protection/blob/master/encryption.png)
